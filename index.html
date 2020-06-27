@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1 class="welcome">Ласкаво просимо на сайт!</h1>
+
+  <div class="container">
+
+    <div class="language">
+      <p class="selectLanguage">Виберіть мову:</p>
+      <a href="#eng" class="data-reload eng">English</a>
+      <a href="#ukr" class="data-reload ukr">Українська</a>
+    </div>
+
+    <div class="registration">
+      <label for="email" class="emailLabel label">Пошта</label>
+      <input type="email" placeholder="Ваша пошта" name="email" class="email" required>
+
+      <label for="uname" class="unameLabel label">Логін</label>
+      <input type="text" placeholder="Ваш логі" name="uname" class="uname" required>
+
+      <label for="psw" class="pswLabel label">Пароль</label>
+      <input type="password" placeholder="Ваш пароль" name="psw" class="psw" required>
+
+      <label for="psw" class="pswagainLabel label">Повторний пароль</label>
+      <input type="password" placeholder="Введіть пароль ще раз" name="psw" class="pswagain" required>
+
+      <button type="submit" class="submit add">Увійти</button>
+    </div>
+
+    <p class="noReg"></p>
+
+    <div class="exit">
+      <label for="uname" class="firstUnameLabel label">Логін</label>
+      <input type="text" placeholder="Ваш логін" name="uname" class="uname firstUname" required>
+      <label for="psw" class="firstPswLabel label">Пароль</label>
+      <input type="password" placeholder="Ваш пароль" name="psw" class="psw firstPsw" required>
+      <button type="submit" class="submit enter">Увійти</button>
+      <p class="reg">Зареєструватись</p>
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

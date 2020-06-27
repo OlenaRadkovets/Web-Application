@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 5px grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    color: rgb(53, 53, 53);
+}
+
+.exit,
+.registration {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+
+.email,
+.uname,
+.psw,
+.pswagain {
+    border-radius: 2px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid olivedrab;
+    font-family: sans-serif;
+}
+
+.submit {
+    border-radius: 2px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: olivedrab;
+    border: 1px solid olivedrab;
+    font-family: sans-serif;
+}
+
+.reg {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    color: #5f5f5f;
+
+}
+
+.label {
+    font-weight: bold;
+}
+
+.data-reload {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    color: rgb(53, 53, 53);
+}
+
+.noReg {
+    color: tomato;
+}
