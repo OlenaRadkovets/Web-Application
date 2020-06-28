@@ -1,0 +1,35 @@
+<h1 class="welcome" [hidden]="!welcomeShow">Welcome to site!</h1>
+
+  <div class="mainContainer" [hidden]="!mainShow" >
+
+    <div class="registration" [hidden]="!show" >
+      <label for="email" class="emailLabel label">Email</label>
+      <input type="email" placeholder="Enter email" name="email" class="email" required>
+
+      <label for="uname" class="unameLabel label">Login</label>
+      <input type="text" placeholder="Enter login" name="uname" class="uname" required>
+
+      <label for="psw" class="pswLabel label">Password</label>
+      <input type="password" placeholder="Enter password" name="psw" class="psw" required>
+
+      <label for="psw" class="pswagainLabel label">Password again</label>
+      <input type="password" placeholder="Enter password again" name="psw" class="pswagain" required>
+
+      <button type="submit" class="submit add btn btn-outline-primary" (click)="add()">Enter</button>
+    </div>
+
+    <p class="noReg" [hidden]="!noReg"> You are not registrated</p>
+
+    <div class="exit" [hidden]="!noShow">
+      <label for="uname" class="firstUnameLabel label">Login</label>
+      <input type="text" placeholder="Enter login" name="uname" class="uname firstUname" required>
+
+      <label for="psw" class="firstPswLabel label">Password</label>
+      <input type="password" placeholder="Enter password" name="psw" class="psw firstPsw" required>
+
+      <button type="submit" (click)="enter()" class="submit enter btn btn-outline-primary">Enter</button>
+      <div class="reg" (click)="reg()">Registration </div>
+    </div>
+
+
+  </div>

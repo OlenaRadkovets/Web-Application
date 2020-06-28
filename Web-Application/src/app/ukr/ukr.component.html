@@ -1,0 +1,35 @@
+<h1 class="welcome" [hidden]="!welcomeShow">Ласкаво просимо на сайт!</h1>
+
+  <div class="mainContainer" [hidden]="!mainShow" >
+
+    <div class="registration" [hidden]="!show">
+      <label for="email" class="emailLabel label">Пошта</label>
+      <input type="email" placeholder="Ваша пошта" name="email" class="email" required>
+
+      <label for="uname" class="unameLabel label">Логін</label>
+      <input type="text" placeholder="Ваш логін" name="uname" class="uname" required>
+
+      <label for="psw" class="pswLabel label">Пароль</label>
+      <input type="password" placeholder="Ваш пароль" name="psw" class="psw" required>
+
+      <label for="psw" class="pswagainLabel label">Повторний парольn</label>
+      <input type="password" placeholder="Введіть пароль ще раз" name="psw" class="pswagain" required>
+
+      <button type="submit" class="submit add btn btn-outline-primary" (click)="add()">Увійти</button>
+    </div>
+
+    <p class="noReg" [hidden]="!noReg">Ви не зареєстрованні!</p>
+
+    <div class="exit" [hidden]="!noShow">
+      <label for="uname" class="firstUnameLabel label">Логін</label>
+      <input type="text" placeholder="Ваш логін" name="uname" class="uname firstUname" required>
+
+      <label for="psw" class="firstPswLabel label">Пароль</label>
+      <input type="password" placeholder="Ваш пароль" name="psw" class="psw firstPsw" required>
+      
+      <button type="submit" (click)="enter()" class="submit enter btn btn-outline-primary">Увійти</button>
+      <div class="reg" (click)="reg()">Зареєструватись</div>
+    </div>
+
+
+  </div>
